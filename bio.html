@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <header>
+        <h1>Bio</h1>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="bio.html">Bio</a>
+            <a href="experience.html">Experience</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+      </header>
+</head>
+
+<body class="container">
+    <main class="wrapper">
+        <div class="greeting">
+            <p>
+                After completed coursework in Software Development at Year Up with specialized training in the Quality Assurance track, I have been able to develop my expertise in CSS, HTML, Java, and JavaScript. I am an emerging professional, passionate and highly motivated to utilize my coding experience and work collaboratively with team members debugging reports to maintain automation. 
+                </p>
+    
+                <p>
+                As an intern at Providence, I have built upon skills I learned in the classroom to become an adept software engineer. I am strong at code maintenance and am eager to utilize my coding experience to work collaboratively with team members debugging reports to maintain automation. While I am particularly strong in Javascript, I am coachable and eager to learn in order support team members in maintaining and stabilizing the production environment.
+                </p>
+           
+                <p>
+                I have proven ability to communicate effectively and professionally across all departments and I am currently looking to contribute my knowledge to grow personally and professionally within a company.
+                </p>
+                
+            </div>
+        </div>
+
+
+
+
+
+        <footer>
+            <p><small>&copy; 2020-<span id="copyright"></span>
+              Kim Le, All Rights Reserved ~ 
+            </p>
+        
+        
+        
+            <script>
+                let myDate = new Date();
+                let myYear = myDate.getFullYear();
+                document.getElementById("copyright").innerHTML = myYear;
+                console.log(myYear);
+            </script>
+        </footer>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Merriweather:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+html {
+    background-color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+header {
+    margin: 1em;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    background-color: rgba(100, 100, 100, 0.2);
+    color: white;
+    margin: auto;
+    line-height: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+
+main.wrapper {
+    background-color: white;
+    height: auto;
+    margin: 1em;
+    padding-top: 20px;
+}
+
+div.greeting {
+    margin: 1em;
+}
+
+
+
+.topnav {
+    margin: auto;
+    overflow: auto;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+a:hover { 
+    background-color: yellow;
+  }
+
+.column {
+  float: left;
+  padding-left: 18%;
+  height: 20%;
+  font-family: 'Merriweather', serif;
+  color:black;
+  text-align:left;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+  .resume {
+    width:80%;
+    margin: auto;
+    text-align:left;
+    font-family: 'Merriweather', serif;
+    color:black;
+  }
+  
+  .resume-heading {
+    width:60%;
+    margin: auto;
+    text-align:center;
+    font-family: 'Syncopate', sans-serif;
+    color:#9A784F;
+    text-decoration: none;
+  }
+
+
+
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
