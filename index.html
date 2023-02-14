@@ -20,29 +20,48 @@
 
 <body class="container">
     <main class="wrapper">
+        <img class="home-image" src="images/Picture1.png" alt="Headshot">
+
         <div class="greeting">
-            <h2>Hello World!</h2>
-            <p>I am an aspiring Software Engineer based in Seattle, Washington</p>
-            <img src="Downloads/headshot.jpg" alt="Headshot">
+            <div class="home-page">
+                <h2 class="home-page-header">Hello World!</h2>
+                <p class="home-page-paragraph">I am an aspiring Software Engineer based in Seattle, Washington.</p>
+            </div>
+            
 
 
 
 
-        <footer>
-            <p><small>&copy; 2020-<span id="copyright"></span>
-              Kim Le, All Rights Reserved ~ 
-            </p>
-        
-        
-        
-            <script>
-                let myDate = new Date();
-                let myYear = myDate.getFullYear();
-                document.getElementById("copyright").innerHTML = myYear;
-                console.log(myYear);
-            </script>
-        </footer>
+    <footer>
+        <script>
+            function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+
+            let myDate = new Date();
+            let myYear = myDate.getFullYear();
+            document.getElementById("copyright").innerHTML = myYear;
+            console.log(myYear);
+        </script>
+    </footer>
+    
     </main>
+    
+        <footer class="copyright">
+            <p><small>&copy; <span id="copyright"></span>
+                Kim Le, All Rights Reserved ~ 
+            </p>
+        </footer>
     
 </body>
 </html>

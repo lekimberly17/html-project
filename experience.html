@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 
     <header>
-        <h1>Experience</h1>
+        <h1>Bio</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
             <a href="bio.html">Bio</a>
@@ -20,144 +20,168 @@
 
 <body class="container">
     <main class="wrapper">
-        <div>
-            <h2 class="resume-heading"><span style="font-weight:bold; font-size:30px;">Relevant Skills</span></h2>
-            <div >
-            <div class="column">
-              <p>
-                      <li>Project Management</li>
-                      <li>Quality Assurance</li>
-                      <li>SharePoint</li>
-                      <li>Microsoft Office 365</li>
-              </p>
+        <div class="greeting">
+            <div>
+                <h2 class="resume-heading">Relevant Skills</h2>
+                <div class="relevantSkills">
+                    <div class="column">
+                        <p>
+                            <li>Project Management</li>
+                            <li>Quality Assurance</li>
+                            <li>SharePoint</li>
+                            <li>Microsoft Office 365</li>
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p>
+                            <li>Salesforce CRM</li>
+                            <li>AdobeSign</li>
+                            <li>Schedule Management</li>
+                            <li>VSCode</li>
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p>
+                            <li>Adobe Acrobat Pro</li>
+                            <li>Git/GitHub</li>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                        </p>
+                    </br>
+                    </div>
+                </div>
             </div>
-            <div class="column">
-              <p>
-                      <li>Salesforce CRM</li>
-                      <li>AdobeSign</li>
-                      <li>Schedule Management</li>
-                      <li>VSCode</li>
-              </p>
+
+            
+            <div>
+                <div class="resume">
+                <h2 class="resume-heading">Experience</h2>
+
+                <div class="tab">
+                    <button class="tablinks" onmouseover="openCity(event, 'Expedia')">Expedia</button>
+                    <button class="tablinks" onmouseover="openCity(event, 'Providence Health & Service')">Providence Health & Service</button>
+                    <button class="tablinks" onmouseover="openCity(event, 'Microsoft')">Microsoft</button>
+                    <button class="tablinks" onmouseover="openCity(event, 'Amazon')">Amazon</button>
+                </div>
+
+                <div id="Expedia" class="tabcontent">
+                    <p>Seattle, WA</p>
+                    <p><strong>Associate Software Engineer</strong></p>
+                    <p>January 2023 - Present</p>
+                </div>
+
+                <div id="Providence Health & Service" class="tabcontent">
+                    <p>Redmond, WA</p>
+                    <p><strong>IS Intern</strong></p>
+                    <p>March 2022 - September 2022</p>
+                        <ul>
+                            <li>Debug 5+ workflows daily using Microsoft Power Automate ensuring correct functionality and user satisfaction to pass onto the Service Delivery team</li>
+                            <li>Develop QA documentation weekly using Excel and Portal resulting in debugging and testing User Stories</li>
+                            <li>Engineer Mission Support table daily using Microsoft Power BI and Dataverse to store employee records</li>
+                            <li>Create CT CEM Request Management Portal using Microsoft Canvas and SharePoint to grant user access request, reducing cost of licensing and consolidate Microsoft Forms from 16+ to 1</li>
+                        </ul>
+                </div>
+
+                <div id="Microsoft" class="tabcontent">
+                    <p>Redmond, WA</p>
+                    <p><strong>Administrative</strong></p>
+                    <p>June 2021 - March 2022</p>
+                        <ul>
+                            <li>Routed legal documents for wet and e-signatures to account signatories for account openings, maintenance, and KYC requests</li>
+                            <li>Coordinated with internal presenters, sales team, and executive briefing center to track engagements in CRM</li>
+                        </ul>
+                </div>
+
+                <div id="Amazon" class="tabcontent">
+                    <p>Virtual</p>
+                    <p><strong>Administrative Support Associate (Trust & Safety Team)</strong></p>
+                    <p>October 2020 - March 2021</p>
+                        <ul>
+                            <li>Launched the On Road Conduct and Safety team with the intake of telematic vehicle safety signals and the assignment of mandatory driver safety training with a focus on customer satisfied</li>
+                            <li>Verified training and email notification to ensure the completion of cases</li>
+                        </ul>
+
+                    <p><strong>Human Resources Assistant (LOA Team)</strong></p>
+                    <p>June 2020 - October 2020</p>
+                        <ul>
+                            <li>Supported regions and associates with leave related tickets</li>
+                            <li>Managed COVID related leaves by processing special grant pay</li>
+                            <li>Collaborated and communicated with the Prague Team to resolve tickets</li>
+                            <li>Analyzed calculated associates pay to ensure there are no errors</li>
+                        </ul>
+
+                    <p><strong>Human Resources Assistant (CTK Team)</strong></p>
+                    <p>May 2020 - June 2020</p>
+                        <ul>
+                            <li>Managed time and attendance to resolve, and process requested tickets such as punch corrections or pay codes</li>
+                            <li>Detected errors such as miss-punches and refunded UPT or Points were deducted incorrectly</li>
+                        </ul>
+                </div>
+                </div>
             </div>
-            <div class="column">
-              <p>
-                      <li>Adobe Acrobat Pro</li>
-                      <li>Git/GitHub</li>
-                      <li>HTML/CSS</li>
-                      <li>JavaScript</li>
-              </p>
+
+            <div class="clearfix">
             </br>
             </div>
-        </div>
 
-        <div class="resume">
-
-            <h2 class="resume-heading"><span style="font-weight:bold; font-size:30px;">Experience</span></h2>
-            <p>
-                <p><strong>Expedia</strong> Seattle, WA</p>
-                <p>Associate Software Engineer</p>
-                <p>January 2023 - Present</p>
-            </p>
-
-        </br>
-
-            <p>
-                <p><strong >Providence Health & Service</strong> Redmond, WA</p>
-                <p>IS Intern</p>
-                <p>March 2022 - September 2022</p>
-                <ul>
-                    <li>Debug 5+ workflows daily using Microsoft Power Automate ensuring correct functionality and user satisfaction to pass onto the Service Delivery team</li>
-                    <li>Develop QA documentation weekly using Excel and Portal resulting in debugging and testing User Stories</li>
-                    <li>Engineer Mission Support table daily using Microsoft Power BI and Dataverse to store employee records</li>
-                    <li>Create CT CEM Request Management Portal using Microsoft Canvas and SharePoint to grant user access request, reducing cost of licensing and consolidate Microsoft Forms from 16+ to 1</li>
-                </ul>
-            </p>
-        </br>
-
-            <p>
-                <p><strong>Microsoft,</strong> Redmond, WA</p>
-                <p>Administrative</p>
-                <p>June 2021 - March 2022</p>
-                    <ul>
-                        <li>Routed legal documents for wet and e-signatures to account signatories for account openings, maintenance, and KYC requests</li>
-                        <li>Coordinated with internal presenters, sales team, and executive briefing center to track engagements in CRM</li>
-                    </ul>
-            </p>
-
-        </br>
-
-            <p>
-                <p><strong>Amazon,</strong> Virtual</p>
-                <p>Administrative Support Associate (Trust & Safety Team)</p>
-                <p>October 2020 - March 2021</p>
-                <ul>
-                    <li>Launched the On Road Conduct and Safety team with the intake of telematic vehicle safety signals and the assignment of mandatory driver safety training with a focus on customer satisfied</li>
-                    <li>Verified training and email notification to ensure the completion of cases</li>
-                </ul>
-
-                <p>Human Resources Assistant (LOA Team)</p>
-                <p>June 2020 - October 2020</p>
-                <ul>
-                    <li>Supported regions and associates with leave related tickets</li>
-                    <li>Managed COVID related leaves by processing special grant pay</li>
-                    <li>Collaborated and communicated with the Prague Team to resolve tickets</li>
-                    <li>Analyzed calculated associates pay to ensure there are no errors</li>
-                </ul>
-
-                <p>Human Resources Assistant (CTK Team)</p>
-                <p>May 2020 - June 2020</p>
-                <ul>
-                    <li>Managed time and attendance to resolve, and process requested tickets such as punch corrections or pay codes</li>
-                    <li>Detected errors such as miss-punches and refunded UPT or Points were deducted incorrectly</li>
-                </ul>
-            </p>
-        </div>
-
-    </br>
-
-        <div class="resume">
+            <div class="resume">
             </br>
-            <h2 class="resume-heading"><span style="font-weight:bold; font-size:30px;">Education</span></h2>
-            <p>
-                <p><strong>Multiverse</strong> Virtual</p>
-                <p>January 2023 - Present</p>
-                <ul>
-                    <li>In the process of completing a 12 week bootcamp relating to software development.</li>
-                </ul>
-            </p>
-
-        </br>
-
-            <p>
-                <p><strong>General Assembly</strong> Virtual</p>
-                <p>October 2022 - January 2023</p>
-                <ul>
-                    <li>Completed a 10 week bootcamp for Python.</li>
-                </ul>
-            </p>
-
-        </br>
-
-            <p>
-                <p><strong>Year Up / Seattle Central College,</strong> Seattle, WA</p>
-                <p>September 2021 - September 2022</p>
-                <ul>
-                    <li>Completed coursework in Software Development, Project Management, and Business Communications, with specialized training in Quality Assurance, including manual software testing</li>
-                </ul>
-            </p>
+            <h2 class="resume-heading" id="education">Education</h2>
+            <div class="tab">
+                <button class="tablinks" onmouseover="openCity(event, 'Multiverse')">Multiverse</button>
+                <button class="tablinks" onmouseover="openCity(event, 'General Assembly')">General Assembly</button>
+                <button class="tablinks" onmouseover="openCity(event, 'Year Up / Seattle Central College')">Year Up / Seattle Central College</button>
+              </div>
+              
+              <div id="Multiverse" class="tabcontent">
+                  <p>
+                      <p>Virtual</p>
+                      <p>January 2023 - Present</p>
+                          <ul>
+                              <li>In the process of completing a 12 week bootcamp relating to software development.</li>
+                          </ul>
+                  </p>
+              </div>
+              
+              <div id="General Assembly" class="tabcontent">
+                  <p>
+                      <p>Virtual</p>
+                      <p>October 2022 - January 2023</p>
+                          <ul>
+                              <li>Completed a 10 week bootcamp for Python.</li>
+                          </ul>
+                      </p>
+              </div>
+              
+              <div id="Year Up / Seattle Central College" class="tabcontent">
+                  <p>
+                      <p>Seattle, WA</p>
+                      <p>September 2021 - September 2022</p>
+                          <ul>
+                              <li>Completed coursework in Software Development, Project Management, and Business Communications, with specialized training in Quality Assurance, including manual software testing</li>
+                          </ul>
+                      </p>
+              </div>
+            </div>
 
         </div>
-
-
-
-
 
         <footer>
-            <p><small>&copy; 2020-<span id="copyright"></span>
-              Kimberly Le, All Rights Reserved ~ 
-            </p>
-        
             <script>
+                function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+                }
+    
                 let myDate = new Date();
                 let myYear = myDate.getFullYear();
                 document.getElementById("copyright").innerHTML = myYear;
@@ -166,6 +190,18 @@
         </footer>
 
     </main>
+
+    <footer class="copyright">
+        <p><small>&copy; <span id="copyright"></span>
+            Kim Le, All Rights Reserved ~ 
+        </p>
+    </footer>
+
+
     
 </body>
 </html>
+
+
+
+

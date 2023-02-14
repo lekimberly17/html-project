@@ -20,31 +20,147 @@
 
 <body class="container">
     <main class="wrapper">
-        <div class="greeting">
-            <p>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 8</div>
+              <img src="images/lava-java.jpg" style="width: 100%">
+              <p></p>
+              <a class="projects" href="https://github.com/lekimberly17/lava-java/settings/pages">Lava Java</a>
+            </div>
             
-            </p>
-        </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 8</div>
+              <img src="images/digital-portfolio.jpg" style="width:100%">
+              <p></p>
+              <a class="projects" href="https://github.com/lekimberly17/digitalportfolio">Digital Portfolio</a>
+            </div>
 
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 8</div>
+                <img src="images/explore-california.jpg" style="width:100%">
+                <p></p>
+                <a class="projects" href="https://lekimberly17.github.io/explore-california/">Explore California</a>
+            </div>
+            
 
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 8</div>
+                <img src="images/daily-grind.jpg" style="width:100%">
+                <p></p>
+                <a class="projects" href="https://github.com/lekimberly17/daily-grind">Daily Grind</a>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 8</div>
+                <img src="images/data-processing.jpg" style="width:100%">
+                <p></p>
+                <a class="projects" href="https://github.com/lekimberly17/data-processing">Data Processing</a>
+            </div>
 
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 8</div>
+                <img src="images/seasonal-styles.jpg" style="width:100%">
+                <p></p>
+                <a class="projects" href="https://github.com/lekimberly17/seasonal-styles">Seasonal Styles</a>
+              </div>
 
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 8</div>
+                <img src="images/time-of-day.jpg" style="width:100%">
+                <p></p>
+                <a class="projects" href="https://github.com/lekimberly17/time-of-day">Time of Day</a>
+            </div>
 
-        <footer>
-            <p><small>&copy; 2020-<span id="copyright"></span>
-              Kim Le, All Rights Reserved ~ 
-            </p>
-        
-        
-        
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 8</div>
+                <img src="images/dom-play.jpg" style="width:100%">
+                <p></p>
+                <a class="projects" href="https://github.com/lekimberly17/dom-play">Dom Play</a>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
+              <span class="dot" onclick="currentSlide(7)"></span> 
+              <span class="dot" onclick="currentSlide(8)"></span> 
+            </div>
+
             <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+            </script>
+        
+        <footer>
+            <script>
+                function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+                }
+    
                 let myDate = new Date();
                 let myYear = myDate.getFullYear();
                 document.getElementById("copyright").innerHTML = myYear;
                 console.log(myYear);
             </script>
         </footer>
+
     </main>
+
+    <footer class="copyright">
+        <p><small>&copy; <span id="copyright"></span>
+            Kim Le, All Rights Reserved ~ 
+        </p>
+    </footer>
+
+
     
 </body>
 </html>
+
+
+
+
