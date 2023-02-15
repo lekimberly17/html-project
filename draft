@@ -27,7 +27,7 @@
                     <div class="resume">
                     <h2 class="resume-heading">Relevant Skills</h2>
     
-                    <div id="tab-skills" class="tab">
+                    <div class="tab">
                         <button class="tablinks" onmouseover="openCity(event, 'CodingLanguages')">Coding Languages</button>
                         <button class="tablinks" onmouseover="openCity(event, 'Technical')">Technical</button>
                     </div>
@@ -56,9 +56,7 @@
                 </div>
 
                    
-                <div class="clearfix">
-                </br>
-                </div>
+            </div>
 
             
             <div>
