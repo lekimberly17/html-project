@@ -53,20 +53,25 @@
                 document.getElementById(cityName).style.display = "block";
                 evt.currentTarget.className += " active";
                 }
-    
-                let myDate = new Date();
-                let myYear = myDate.getFullYear();
-                document.getElementById("copyright").innerHTML = myYear;
-                console.log(myYear);
             </script>
         </footer>
 
     </main>
 
     <footer class="copyright">
-        <p><small>&copy; <span id="copyright"></span>
-            Kim Le, All Rights Reserved ~ 
-        </p>
+        <a class="footer-link" href = "https://www.linkedin.com/in/222-kimberly-le/" target = "_self">LinkedIn</a>
+        <a class="footer-link" href = "https://github.com/lekimberly17" target = "_self">GitHub</a>
+        <a class="footer-link" href = "resume.pdf" target = "_self">Resume</a>
+        <a class="footer-link" href = "mailto: lekimberly509@gmail.com" target = "_self">Email</a>
+        <p><small>&copy;<span id="copyright"></span> by Kim Le, All Rights Reserved ~</p>
+  
+        <script>
+        let myDate = new Date();
+        let myYear = myDate.getFullYear();
+        document.getElementById("copyright").innerHTML = myYear;
+        console.log(myYear);
+        </script>
+
     </footer>
     
 </body>

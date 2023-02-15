@@ -58,6 +58,7 @@ main.wrapper {
 
 a:hover { 
     background-color: yellow;
+    color: black;
   }
 
 
@@ -339,11 +340,14 @@ img {vertical-align: middle;}
     color: white;
 }
 
+.footer-link {
+    text-decoration: none;
+    color: white;
+    margin: 1em;
+}
+
 /* Media */
 @media screen and (max-width: 500px){
-
-
-   
     h1 {
         display: flex;
         justify-content: left;
@@ -359,7 +363,6 @@ img {vertical-align: middle;}
         height: auto;
         width: 500px;
     }
-
 
     /* Home Page */
     .home-page-header {
@@ -380,11 +383,11 @@ img {vertical-align: middle;}
      /* Home Page */
      .about-me-heading {
         font-size: 200%;
-     }
+    }
 
      .about-me-para {
         font-size: 80%;
-     }
+    }
 
     /* Experience*/
         .resume-heading {
@@ -395,21 +398,20 @@ img {vertical-align: middle;}
     }
 
     #education {
-    padding-top: 120%;
+        padding-top: 120%;
     }
 
     .tabcontent {
-    font-size: 80%;
+        font-size: 80%;
     }
 
     .tab button {
-    font-size: 90%;
+        font-size: 90%;
     }
-
 
     /* Portfolio */
     @media only screen and (max-width: 500) {
-        .prev, .next,.text {font-size: 11px}
+    .prev, .next,.text {font-size: 11px}
     }
 
     /* Footer*/
