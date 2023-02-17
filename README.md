@@ -1,19 +1,20 @@
 # html-project
 
 This example project is written in HTML, CSS, and some JavaScript.
+<p> https://lekimberly17.github.io/html-project/ </p>
 
 # The Assignment
 
 Building a webpage that is all about you!
 
 
-   1) Must Includ:
+   1) Must Include:
         * Home Page
         * Bio Page
         * Experience Page
         * Portfolio Page
-        
-    2) Feature Completion:
+
+   2) Feature Completion:
         * You have a fully deployed website, and can share a link to it with the cohort.
         * The project is committed and pushed to your Git Repo.
         * The website features at least three pages (Home, Bio, Experience, Portfolio).
@@ -24,7 +25,7 @@ Building a webpage that is all about you!
         * The content is positioned appropriately (not overflowing into other portions of the site due to incorrect CSS).
         * The site has content that properly fills the appropriate space.
         
-    3) HTML Criteria:
+   3) HTML Criteria:
         * Attributes: name and value
         * Document structure, Proper Nesting HTML
         * Headings (h1/h2/h3…)
@@ -35,8 +36,8 @@ Building a webpage that is all about you!
         * Semantic Elements (i.e. article/aside instead of only div)
         * Structure elements (i.e. header/nav/main/footer)
         * Fallback Elements (div/span)
-        
-     4) CSS Criteria:
+
+   4) CSS Criteria:
         * CSS in external stylesheet and linked to html via link tag
         * Margin vs. Padding
         * Borders and Shadows
@@ -47,4 +48,6 @@ Building a webpage that is all about you!
         * Media Queries (for mobile friendly design)
         * Cascading and Specificity: Element Names Ids Classes
         * No “!important” Property
+
+        
     
